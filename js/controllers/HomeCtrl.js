@@ -3,7 +3,7 @@
 
     angular.module('HomeCtrl', [])
       .controller('HomeController',
-        function($scope, $routeParams) {
+        function($scope, $stateParams) {
 
         });
 })();

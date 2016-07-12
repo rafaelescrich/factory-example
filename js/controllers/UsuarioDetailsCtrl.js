@@ -3,7 +3,7 @@
 
     angular.module('UsuarioDetailsCtrl', [])
       .controller('UserDetailsController',
-        function($scope, $routeParams, Usuario) {
+        function($scope, $stateParams, Usuario) {
 
           var id = $routeParams.id;
 

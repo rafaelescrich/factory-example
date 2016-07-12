@@ -3,7 +3,7 @@
 
     angular.module('RecursoDetailsCtrl', [])
       .controller('RecursoDetailsController',
-        function($scope, $routeParams, Recursos) {
+        function($scope, $stateParams, Recursos) {
 
           var id = $routeParams.id;
 
