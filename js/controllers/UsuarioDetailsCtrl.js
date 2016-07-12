@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('UserDetailsCtrl', [])
+    angular.module('UsuarioDetailsCtrl', [])
       .controller('UserDetailsController',
         function($scope, $routeParams, Usuario) {
 

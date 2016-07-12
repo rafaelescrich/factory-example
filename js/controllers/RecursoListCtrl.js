@@ -8,5 +8,6 @@
           Recursos.getAll(function(data) {
             $scope.recursos = data;
           });
+          
         });
 })();
