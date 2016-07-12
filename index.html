@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html>
+<head>
+  <title>AngularJS: UI-Router Quick Start</title>
+  <!-- Bootstrap files -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <!-- Angular -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <!-- Angular-Resource -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-resource.js"></script>
+  <!-- UI-Router -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+  <!-- App -->
+  <script src="js/app.js"></script>
+
+  <script src="/js/appRoutes.js"></script>
+
+  <script src="/js/controllers/RecursoListCtrl.js"></script>
+
+  <script src="/js/controllers/RecursoDetailsCtrl.js"></script>
+
+  <script src="/js/controllers/HomeCtrl.js"></script>
+
+  <script src="/js/controllers/UsuarioDetailsCtrl.js"></script>
+
+  <script src="/js/services/RecursoService.js"></script>
+
+  <script src="/js/services/UsuarioService.js"></script>
+
+</head>
+
+<body class="container" ng-app="Myapp">
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Portal MEC</a>
+      <ul class="nav">
+        <li><a ui-sref="busca">Factory Examplo</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <div class="well" ui-view></div>
+    </div>
+  </div>
+
+</body>
+</html>

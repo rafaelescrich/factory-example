@@ -1,0 +1,115 @@
+<!-- cabeçalho -->
+<div ng-include="'templates/partes/cabecalho-inicial.html'"></div>
+<!-- // // //  -->
+
+  <!-- Conheça a Plataforma Home -->
+  <div class="conheca">
+    <div class="container"><h2 class="title todos color">Conheça as três grandes áreas do Portal</h2></div>
+    <div class="container">
+      <div class="rea col-md-4">
+        <div class="icon">
+          <img src="/img/rea-icon.svg" alt="Recursos Educacionais Abertos">
+        </div>
+        <div><h3 class="rea color">Recursos Educacionais<br>Abertos</h3></div>
+        <div><p>Recursos Educacionais Abertos <strong>enviadas por usuários</strong> da plataforma e de <strong>outras bases</strong>.<br><br></p></div>
+        <div class="scroll-down">
+          <a class="rea color" href="#" title="Descer para área específica">
+          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a></div>
+      </div>
+      <div class="cole col-md-4">
+        <div class="icon">
+          <img src="/img/cole-icon.svg" alt="Coleções">
+        </div>
+        <div><h3 class="cole color">Coleções<br>Abertas</h3></div>
+        <div><p>Coleções criadas especialmente para a <strong>formação</strong> em diversos assuntos. Coleções criadas epecialmente para a <strong>formação</strong> em diversos assuntos.</p></div>
+        <div class="scroll-down">
+          <a class="cole color" href="#" title="Descer para área específica">
+          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a></div>
+      </div>
+      <div class="rev col-md-4">
+        <div class="icon">
+          <img src="/img/rev-icon.svg" alt="Recursos Educacionais Validados">
+        </div>
+        <div><h3 class="rev color">Recursos Educacionais<br>Validados</h3></div>
+        <div><p>Recursos <strong>qualificados</strong>pelo MEC, contendo Recursos livres e gratuitos que poderão ser baixados diretamenta na Plataforma.</p></div>
+        <div class="scroll-down">
+          <a class="rev color" href="#" title="Descer para área específica">
+          <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Área Colaborativa Home -->
+  <div class="colaborativa">
+    <div class="container">
+    <h2 class="title rea color">Plataforma COLABORATIVA</h2>
+    <p><strong>Divulgando</strong> e <strong>avaliando</strong> recursos da plataforma você ajuda a manter a plataforma atualizada, levando conteúdo de qualidade para milhares de professores, mas além disso você também pode <strong>colaborar</strong> enviando seu próprio <span class="rea color">Recurso Educacional Aberto</span> :)</p>
+    </div>
+    <div class="botoes">
+      <a href="#" class="btn btn-link  active" role="button">COMO CRIAR UM RECURSO</a>
+      <a href="#" class="btn btn-default rea bg active" role="button">ENVIAR RECURSO</a>
+    </div>
+  </div>
+  
+  <!-- ÁRecursos Educacionais Abertos -->
+  <div class="recursos-abertos">
+      <div class="banner rea bg">
+        <div class="container">
+          <div class="icon col-md-5">
+            <img src="/img/rea-icon.svg" alt="Recursos Educacionais Abertos">
+          </div>
+          <div class="conteudo col-md-7">
+            <h2 class="title">Recursos Educacionais Abertos</h2>
+            <p>São mais de 100mil Recursos Educacionais disponíveis,<br>
+            que podem complementar sua aula!</p>
+          </div>
+        </div>
+      </div>
+      <div class="container category container category-1">
+        <ul class=" category1 list-inline">
+          <li ng-repeat="i in [1, 2, 3, 4]" class="col-md-3" ng-include="'templates/partes/cards/card-rea.html'"></li> <!-- Card para recursos educacionais -->
+        </ul>
+      </div>
+  </div>
+
+  <!-- Coleções Estruturadas -->
+  <div class="colecoes">
+      <div class="banner cole bg">
+        <div class="container">
+          <div class="icon col-md-5">
+            <img src="/img/cole-icon.svg" alt="Coleções">
+          </div>          
+          <div class="conteudo col-md-7">
+            <h2 class="title">Coleções Estruturadas</h2>
+            <p>São mais de 100mil Recursos Educacionais disponíveis,<br>
+            que podem complementar sua aula!</p>
+          </div>
+        </div>
+      </div>
+      <div class="container category container category-1">
+        <ul class=" category1 list-inline">
+          <li ng-repeat="i in [1, 2, 3]" class="col-md-4" ng-include="'templates/partes/cards/card-colecao.html'"></li> <!-- Card para coleções estruturadas -->
+        </ul>
+      </div>
+  </div>
+
+  <!-- Recursos Educacionais Validados -->
+  <div class="recursos-validados">
+      <div class="banner rev bg">
+        <div class="container">
+          <div class="icon col-md-5">
+            <img src="/img/rev-icon.svg" alt="Recursos Educacionais Validados">
+          </div>
+          <div class="conteudo col-md-7">
+            <h2 class="title">Recursos Educacionais<br>Qualificados pelo MEC</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptas nihil voluptatibus in ipsam a delectus rem iusto inventore ut ipsum, mollitia sint provident hic iste possimus vero tenetur obcaecati?</p>
+            <a class="btn btn-default rev color" href="#" role="button">CONHECER CRITÉRIOS</a>
+          </div>
+        </div>
+      </div>
+      <div class="container category container category-1">
+        <ul class=" category1 list-inline">
+              <li ng-repeat="i in [1, 2, 3]" class="col-md-4" ng-include="'templates/partes/cards/card-rev.html'"></li> <!-- Card para recursos qualificados -->
+        </ul>
+      </div>
+  </div>

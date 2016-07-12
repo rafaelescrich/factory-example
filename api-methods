@@ -1,0 +1,222 @@
+HTTP Request
+
+GET http://portalmecapi.c3sl.ufpr.br/v1/learning_objects
+URL Parameters
+
+    Response
+
+[
+  {
+    "id": 12192,
+    "name": "Tetragona Clavipes - entrada",
+    "created_at": "2016-04-29T14:37:28.121Z",
+    "updated_at": "2016-05-09T13:12:33.799Z",
+    "description": "Essa imagem objetiva abordar os conceitos referentes à entrada da colméia da espécie de abelha chamada Tetragona Clavipes, que é mais ou menos ampla",
+    "author": "Webbee",
+    "score": 0,
+    "likes_count": 0,
+    "tags": [
+      {
+        "id": 23183,
+        "name": "Colméia",
+        "taggings_id": null,
+        "created_at": "2016-05-09T13:23:34.857Z",
+        "updated_at": "2016-05-09T13:23:34.857Z"
+      },
+      {
+        "id": 23182,
+        "name": "Abelha",
+        "taggings_id": null,
+        "created_at": "2016-05-09T13:23:34.857Z",
+        "updated_at": "2016-05-09T13:23:34.857Z"
+      },
+      {
+        "id": 23181,
+        "name": "Natureza cíclica da Natureza",
+        "taggings_id": null,
+        "created_at": "2016-05-09T13:23:34.857Z",
+        "updated_at": "2016-05-09T13:23:34.857Z"
+      },
+      {
+        "id": 23180,
+        "name": "Meio Ambiente",
+        "taggings_id": null,
+        "created_at": "2016-05-09T13:23:34.857Z",
+        "updated_at": "2016-05-09T13:23:34.857Z"
+      },
+      {
+        "id": 23179,
+        "name": "Ensino Fundamental Final",
+        "taggings_id": null,
+        "created_at": "2016-05-09T13:23:34.857Z",
+        "updated_at": "2016-05-09T13:23:34.857Z"
+      },
+      {
+        "id": 23178,
+        "name": "Educação Básica",
+        "taggings_id": null,
+        "created_at": "2016-05-09T13:23:34.857Z",
+        "updated_at": "2016-05-09T13:23:34.857Z"
+      }
+    ],
+    "attachments": [
+      {
+        "id": 16718,
+        "name": "Tetragona Clavipes - entrada.jpg.jpg",
+        "link": "/rest/bitstreams/23427",
+        "retrieve_link": "/bitstreams/23427/retrieve",
+        "description": "Generated Thumbnail",
+        "format": "JPEG",
+        "mime_type": "image/jpeg",
+        "size": 2244,
+        "bundle_name": "THUMBNAIL",
+        "learning_object_id": 12192,
+        "created_at": "2016-04-29T14:37:40.613Z",
+        "updated_at": "2016-04-29T14:37:40.614Z",
+        "id_dspace": 23427,
+        "thumbnail_file_name": null,
+        "thumbnail_content_type": null,
+        "thumbnail_file_size": null,
+        "thumbnail_updated_at": null,
+        "cache_link": null
+      },
+      {
+        "id": 16719,
+        "name": "Tetragona Clavipes - entrada.jpg",
+        "link": "/rest/bitstreams/14933",
+        "retrieve_link": "/bitstreams/14933/retrieve",
+        "description": null,
+        "format": "JPEG",
+        "mime_type": "image/jpeg",
+        "size": 77858,
+        "bundle_name": "ORIGINAL",
+        "learning_object_id": 12192,
+        "created_at": "2016-04-29T14:37:40.613Z",
+        "updated_at": "2016-04-29T14:37:40.614Z",
+        "id_dspace": 14933,
+        "thumbnail_file_name": null,
+        "thumbnail_content_type": null,
+        "thumbnail_file_size": null,
+        "thumbnail_updated_at": null,
+        "cache_link": null
+      }
+    ]
+  }
+]
+
+Parameter 	Type 	Description
+limit 	:integer 	default: 10
+offset 	:integer 	default: 0
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+HTTP Request
+
+GET http://portalmecapi.c3sl.ufpr.br/v1/learning_objects/:id?obba=
+URL Parameters
+Parameter 	Type 	Description
+:id 	:integer 	The id of the learning object
+:obaa 	:boolean 	If the return should be the obaa pattern
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+HTTP Request
+
+POST http://portalmecapi.c3sl.ufpr.br/v1/learning_objects
+Query Parameters
+
+    Request
+
+{
+  "learning_object":
+    {
+      "author" : "Marcela Ribeiro de Oliveira",
+      "name" : "Teste",
+      "object_type_id" : 1,
+      "description" : "Teste teste teste",
+      "school_level" : 1,
+      "language" : 2
+    }
+}
+
+Parameter 	Type 	Description
+author 	:string 	The author of a educational content
+name 	:string 	The name of the learning object
+object_type_id 	:integer 	The id of object type
+description 	:text 	The description of educational content of the learning object
+school_level 	:integer 	The id of school level recomended
+language 	:integer 	The id of a language, that learning object belongs.
+HTTP Response
+
+    Response
+
+{
+  "id": 19016,
+  "id_dspace": 20798,
+  "name": "Teste",
+  "author": "Marcela Ribeiro de Oliveira",
+  "description": "Teste teste teste",
+  "published_at": null,
+  "score": 0,
+  "school_level": 1,
+  "metadata": [
+    {
+      "key": "dc.object.url",
+      "value": null
+    }
+  ],
+  "keywords": null,
+  "publisher_id": 1,
+  "publisher_type": "User",
+  "language_id": 2,
+  "object_type_id": 1,
+  "created_at": "2016-05-06T13:17:00.462Z",
+  "updated_at": "2016-05-06T13:17:00.462Z",
+  "views_count": 0,
+  "downloads_count": 0,
+  "likes_count": 0,
+  "shares_count": 0,
+  "state": "published",
+  "thumbnail_file_name": null,
+  "thumbnail_content_type": null,
+  "thumbnail_file_size": null,
+  "thumbnail_updated_at": null,
+  "attachment_id": null
+}
+
+Type 	Description
+201 	The learning object is created
+422 	The learning object has invalids values
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+HTTP Request
+
+DELETE http://portalmecapi.c3sl.ufpr.br/v1/learning_objects/id
+URL Parameters
+Parameter 	Type 	Description
+id 	:integer 	The id of the learning object
+HTTP Response
+Type 	Description
+200 	OK. Operation has been done.
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+HTTP Request
+
+PUT/PATCH http://portalmecapi.c3sl.ufpr.br/v1/learning_objects/id
+URL Parameters
+Parameter 	Type 	Description
+id 	:integer 	The id of the learning object
+Query Parameters
+Parameter 	Type 	Description
+author 	:string 	The author of a educational content
+name 	:string 	The name of the learning object
+object_type_id 	:integer 	The id of object type
+description 	:text 	The description of educational content of the learning object
+school_level 	:integer 	The id school level recomended
+language 	:integer 	The id of a language, that learning object belongs.
+HTTP Response
+Type 	Description
+200 	OK. Operation has been done.
+422 	The learning object has invalids values
